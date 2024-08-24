@@ -1,0 +1,165 @@
+.CartItemContainer {
+    width: 98%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.24);
+    height: 150px;
+    margin: 10px;
+    padding: 5px;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.CartItemImage {
+    width: 20%;
+    height: 100%;
+}
+
+.CartItemImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.CartDetails {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.CartItemsInfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CartActions {
+    display: flex;
+    height: 50px;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CartActions button {
+    width: 50px;
+    height: 30px;
+    background-color: #025949;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.CartActions button:hover {
+    background-color: #027a64;
+    border: 2px solid #025949;
+}
+
+.CartItemDelete {
+    width: 70px;
+    height: 30px;
+    background-color: rgba(2, 89, 73, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.CartItemDelete:hover {
+    background-color: red;
+    border: 2px solid #590202;
+}
+
+/* Adjust for tablets and larger phones */
+@media screen and (max-width: 768px) {
+    .CartItemContainer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .CartItemImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .CartActions {
+        width: 100px;
+    }
+
+    .CartActions button,
+    .CartItemDelete {
+        width: 60px;
+        height: 25px;
+    }
+
+    .CartDetails p {
+        font-size: 14px;
+    }
+}
+
+/* Smaller tablets and larger phones */
+@media screen and (max-width: 600px) {
+    .CartDetails p {
+        font-size: 12px;
+    }
+
+    .CartActions button,
+    .CartItemDelete {
+        width: 50px;
+        height: 20px;
+    }
+
+    .CartActions {
+        width: 80px;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+    .CartItemContainer {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .CartDetails p {
+        font-size: 16px;
+    }
+
+    .CartActions button,
+    .CartItemDelete {
+        width: 40px;
+        height: 30px;
+    }
+
+    .CartActions {
+        width: 70px;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 365px) {
+    .CartDetails p {
+        font-size: 19px;
+    }
+
+    .CartActions button,
+    .CartItemDelete {
+        width: 50px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .CartActions {
+        width: 60px;
+    }
+}

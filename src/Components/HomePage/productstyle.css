@@ -1,0 +1,36 @@
+.Home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* Optional background and position styles */
+}
+
+.home-holder {
+    width: 80%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .home-holder {
+        width: 90%; /* Slightly increase width for tablet view */
+        gap: 15px; /* Reduce gap between items */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .Home {
+        justify-content: flex-start; /* Align content to start */
+    }
+
+    .home-holder {
+        width: 95%; /* Full width on mobile */
+        gap: 10px; /* Further reduce gap for tighter layout */
+    }
+}
