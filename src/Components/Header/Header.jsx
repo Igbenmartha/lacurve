@@ -32,7 +32,7 @@ const Header = () => {
         <div className="dropdown"  onMouseLeave={()=>setUserDrop(false)}>
         <p>  <NavLink to = '/app/home'> Home</NavLink></p>            
         <p>  <NavLink to = '/app/vendor'> Vendor</NavLink></p>            
-        <p>  <NavLink to = '/app/cart'> Cart</NavLink></p>            
+        <p>  <NavLink to = '/app/cart'> Cart{cart.length}</NavLink></p>            
                     
         </div> : null
 

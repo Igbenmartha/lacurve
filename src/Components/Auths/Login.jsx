@@ -60,7 +60,6 @@ Nav('/app/home')
               <Label>Email address*</Label>
               <Input type="email" placeholder="Enter email" name="email" {...register("email")} required={true}/>
             </InputDiv>
-          {errors.email && <span style={{color:"red"}}>{errors.email.message}</span>}
 
             <InputDiv>
               <Label>Password</Label>
@@ -69,8 +68,7 @@ Nav('/app/home')
                 {showPassword ? <FaRegEye size={20} onClick={() => setShowPassword(false)} /> : <FaRegEyeSlash size={20} onClick={() => setShowPassword(true)} />}
               </Div>
             </InputDiv>
-          {errors.password && <span style={{color:"red"}}>{errors.password.message}</span>}
-
+<p style={{color:"red"}}> {setError}</p>
             <Button Bg disabled={isLoading} type="submit" >
               {isLoading ? <ClipLoader size="20px" color="#ffffff" /> : "Login"}
             </Button>
