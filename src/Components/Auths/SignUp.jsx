@@ -79,7 +79,7 @@ const onSubmit =(data) => {
       <Toaster />
       <Mainwrapper>
         <SignUpForm>
-          <SignUpWrapper onSubmit={handleSubmit(onSubmit)}>
+          <SignUpWrapper onSubmit={handleSubmit(onSubmit)}>//
             <CreateAcct><h2>Create Your Account</h2></CreateAcct>
             <InputDiv>
               <Label>Fullname*</Label>
