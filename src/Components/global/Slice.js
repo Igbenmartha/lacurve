@@ -50,6 +50,7 @@ const Slice = createSlice({
           }
         },
         addToCart:(state,{payload})=>{
+            // const { id, vendor, price } = payload;
             const check = state.cart.findIndex((e)=> e.id == payload.id);
             if (check === -1){
               state.cart.push({...payload,QTY:1, totalPrice :payload.price},
